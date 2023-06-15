@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-yarn.lock
+/yarn.lock
 
 # testing
 /coverage
@@ -12,7 +12,7 @@ yarn.lock
 # next.js
 /.next/
 /out/
-
+.env
 # production
 /build
 
