@@ -6,7 +6,7 @@ export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#ffff'
+      main: '#252525'
     },
 
     secondary: {
@@ -25,6 +25,18 @@ export const darkTheme = createTheme({
         color: '#fff',
         
       },
+    },
+    MuiTypography:{
+      styleOverrides: {
+        h1: {
+          fontSize: 45,
+          fontWeight: 500
+        },
+        h2: {
+          fontSize: 30,
+          fontWeight: 300
+        },
+      }
     },
     MuiButton: {
       defaultProps: {

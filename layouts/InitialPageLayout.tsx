@@ -26,14 +26,14 @@ export const InitialPageLayout: FC<Props> = ({ children, title, description }) =
 
       
 
-      <main>
+      <main style={{ height: '100vh'}} className='fadeIn'>
         <Grid container sx={stylesMainContainer}>
 
           <Grid item  md={4}>
-            <Grid item sx={{ display: { sm: 'none', md:'block'}}}>
+            <Grid item sx={{ display: { xs: 'none', md: 'block'}}}>
               <SideMenu/>
             </Grid>
-            <Grid item sx={{ display: { sm: 'block', md:'none'}}}>
+            <Grid item sx={{ display: { xs: 'block', md:'none'}}}>
               <Navbar/>
             </Grid>
           </Grid>
