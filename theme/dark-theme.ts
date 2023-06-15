@@ -6,7 +6,7 @@ export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#252525'
+      main: '#ffff'
     },
 
     secondary: {
@@ -22,7 +22,8 @@ export const darkTheme = createTheme({
     MuiLink: {
       defaultProps: {
         underline: 'none',
-        color: '#252525'
+        color: '#fff',
+        
       },
     },
     MuiButton: {
