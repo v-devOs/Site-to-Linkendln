@@ -16,7 +16,7 @@ const HomePage = () => {
       title='Uriel Emiliano Galindo Lopez' 
       description='Sitio web creado para dar a conocer mis habilidades en desarrollo web y proyectos realizados'
     >
-      <Grid container spacing={2} sx={{ width: { xs: '100%', md: '80%'}}}>
+      <Grid container spacing={2} sx={{ width: { xs: '100%', md: '85%'}}}>
 
         <Grid item>
           <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>Uriel Galindo</Typography>

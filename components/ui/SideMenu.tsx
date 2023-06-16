@@ -14,7 +14,12 @@ export const SideMenu = () => {
     <div style={{ margin: '0 10px'}}>
       <Toolbar/>
 
-        <Typography variant='h6' component='h6' fontFamily='serif'>v-Devos</Typography>
+      <Typography 
+        variant='h5' 
+        component='h5' 
+        fontFamily='serif'
+        ml={2}
+        >v-Devos</Typography>
 
       <List sx={{ display: { xs: 'flex', md: 'block'}}}>
 
