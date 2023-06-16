@@ -11,11 +11,7 @@ a{
   position: fixed;
 }
 
-@media screen and (max-width: 546px) {
-  .container-side-menu{
-    position: relative;
-  }
-}
+
 
 @keyframes fadeIn {
   0% {opacity: 0;}
@@ -41,9 +37,21 @@ a{
 .circular-btn {
   border-radius: 10px;
   border: 1px solid white;
-  width: 180px;
+  width: 150px;
+  margin: 10px 0;
 }
 
 .circular-btn:hover {
   background-color: #274494;
+}
+
+@media screen and (max-width: 546px) {
+  .container-side-menu{
+    position: relative;
+  }
+
+  .circular-btn{
+    width: 100%;
+  }
+
 }

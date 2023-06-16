@@ -13,8 +13,6 @@ export const SideMenu = () => {
 
   const router = useRouter()
 
-  console.log(router)
-
   return (
     <div className='container-side-menu'>
       <Toolbar/>

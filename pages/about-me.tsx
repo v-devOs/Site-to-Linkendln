@@ -1,31 +1,10 @@
 import { useWrite } from '@/hooks'
 import { Grid, Typography, Button, Link } from '@mui/material'
 
-import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-
 import { InitialPageLayout } from '@/layouts'
+import { LinksSocialMedia } from '@/components/ui'
 
-const socialMediaLinks = [
-  {
-    linkPage: '',
-    sectionName: 'Github',
-    icon: <GitHubIcon/>
-  },
-  {
-    linkPage: '',
-    sectionName: 'LinkedIn',
-    icon: <LinkedInIcon/>
-  },
-  {
-    linkPage: '',
-    sectionName: 'WhatsApp',
-    icon: <WhatsAppIcon/>
-  },
 
-]
 const AboutMe = () => {
 
   const { actualPhrase } = useWrite('Acerca de mi')
@@ -51,23 +30,8 @@ const AboutMe = () => {
           <Typography variant='body1' mt={2}>Officia dolor culpa enim dolore sint dolor occaecat. Ipsum sit laborum anim esse consequat. Non et nulla reprehenderit veniam sunt deserunt reprehenderit.</Typography>
         </Grid>
 
-        <Grid item mt={4} xs={12} display='flex' justifyContent='space-between'>
-          {
-            socialMediaLinks.map( ({ sectionName, linkPage, icon})=> (
-              <Button key={sectionName} 
-                size='large' 
-                className='circular-btn'
-                color='secondary' 
-                startIcon={icon}
-                endIcon={<ArrowOutwardOutlinedIcon/>}
-              >
-                <Link href={linkPage}>
-                  {sectionName}
-                </Link>
-              </Button>
-            ))
-          }
-        </Grid>
+        
+        <LinksSocialMedia/>
         
       </Grid>
     </InitialPageLayout>
