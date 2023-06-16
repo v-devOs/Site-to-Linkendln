@@ -1,6 +1,10 @@
 export const headerNavbar: IHeader[] = [
   {
-    sectionName: 'Acerca de mi',
+    sectionName: 'Inicio',
+    linkPage: '/'
+  },
+  {
+    sectionName: 'Sobre mi',
     linkPage: 'about-me'
   },
   {
