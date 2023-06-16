@@ -10,18 +10,17 @@ export const SideMenu = () => {
 
   const router = useRouter()
 
-
   return (
-    <div>
+    <div style={{ margin: '0 10px'}}>
       <Toolbar/>
 
-      <List>
-        <Typography variant='h6' component='h6' mb={2}>v-Devos</Typography>
-        <Divider/>
+        <Typography variant='h6' component='h6' fontFamily='serif'>v-Devos</Typography>
+
+      <List sx={{ display: { xs: 'flex', md: 'block'}}}>
 
         {
           headerNavbar.map( header => (
-            <ListItem key={header.sectionName}>
+            <ListItem key={header.sectionName} >
               <Button variant='text' color='secondary' className={router.asPath === header.linkPage ? 'actual-section' : ''}>
                 <NextLink href={header.linkPage} passHref>
                   <Link component='span'>
