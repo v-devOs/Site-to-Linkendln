@@ -7,10 +7,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 
-import { AboutMe } from '@/components/Information'
 import { InitialPageLayout } from '@/layouts'
+import { useWrite } from '@/hooks'
+import { useEffect } from 'react'
+
 
 const HomePage = () => {
+
+  const { actualPhrase } = useWrite('Uriel Galindo')
+  
   return (
     <InitialPageLayout 
       title='Uriel Emiliano Galindo Lopez' 
@@ -19,7 +24,7 @@ const HomePage = () => {
       <Grid container spacing={2} sx={{ width: { xs: '100%', md: '85%'}}}>
 
         <Grid item>
-          <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>Uriel Galindo</Typography>
+          <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>{actualPhrase}</Typography>
           <Typography variant='body1' mt={5}>Consequat aliquip labore sint irure voluptate. Nisi culpa Lorem veniam id cillum id aliquip anim dolore proident nisi. Adipisicing excepteur amet eu aliqua adipisicing veniam ea Lorem ullamco officia quis dolore velit reprehenderit. Reprehenderit Lorem excepteur Lorem id veniam labore dolore amet anim.</Typography>
         </Grid>
 
