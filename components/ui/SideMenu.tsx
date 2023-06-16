@@ -1,17 +1,22 @@
 import NextLink from 'next/link'
-import { Button, Divider, Link, List, ListItem, Toolbar, Typography } from '@mui/material';
+import { Button, Divider, Link, List, ListItem, ListItemButton, Toolbar, Typography } from '@mui/material';
 
 
 import { headerNavbar } from './constans';
 import { useRouter } from 'next/router';
+import { CSSProperties } from 'react';
+
+
 
 
 export const SideMenu = () => {
 
   const router = useRouter()
 
+  console.log(router)
+
   return (
-    <div style={{ margin: '0 10px'}}>
+    <div className='container-side-menu'>
       <Toolbar/>
 
       <Typography 
@@ -25,15 +30,13 @@ export const SideMenu = () => {
 
         {
           headerNavbar.map( header => (
-            <ListItem key={header.sectionName} >
-              <Button variant='text' color='secondary' className={router.asPath === header.linkPage ? 'actual-section' : ''}>
+            <ListItemButton key={header.sectionName} sx={{ mt: 2 }} className={router.route === header.linkPage ? 'actual-section' : ''}>
                 <NextLink href={header.linkPage} passHref>
                   <Link component='span'>
                     <Typography key={header.linkPage}>{header.sectionName}</Typography>
                   </Link>
                 </NextLink>
-              </Button>
-            </ListItem>
+            </ListItemButton>
           ))
         }
       </List>

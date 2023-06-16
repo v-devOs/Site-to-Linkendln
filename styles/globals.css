@@ -6,6 +6,17 @@ a{
   background-color: #252525;
 }
 
+.container-side-menu{
+  margin: 0 10px;
+  position: fixed;
+}
+
+@media screen and (max-width: 546px) {
+  .container-side-menu{
+    position: relative;
+  }
+}
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -29,6 +40,8 @@ a{
 
 .circular-btn {
   border-radius: 10px;
+  border: 1px solid white;
+  width: 180px;
 }
 
 .circular-btn:hover {

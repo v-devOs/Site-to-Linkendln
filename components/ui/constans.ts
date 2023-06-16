@@ -1,24 +1,24 @@
-export const headerNavbar: IHeader[] = [
+export const headerNavbar: ILink[] = [
   {
     sectionName: 'Inicio',
     linkPage: '/'
   },
   {
     sectionName: 'Sobre mi',
-    linkPage: 'about-me'
-  },
-  {
-    sectionName: 'Habilidades',
-    linkPage: 'skills'
+    linkPage: '/about-me'
   },
   {
     sectionName: 'Proyectos',
-    linkPage: 'projects'
+    linkPage: '/projects'
+  },
+  {
+    sectionName: 'Contacto',
+    linkPage: '/contact-me'
   },
 ]
 
 
-interface IHeader{
+export interface ILink{
   sectionName: string,
   linkPage: string
 }
