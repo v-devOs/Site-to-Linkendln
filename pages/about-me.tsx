@@ -30,6 +30,10 @@ const AboutMe = () => {
           <Typography variant='body1' mt={2}>Officia dolor culpa enim dolore sint dolor occaecat. Ipsum sit laborum anim esse consequat. Non et nulla reprehenderit veniam sunt deserunt reprehenderit.</Typography>
         </Grid>
 
+        <hr style={{ width: '95%'}}/>
+
+        {/* TODO: Realizar compoenete que muestre las habilidades mas destacadas */}
+
         
         <LinksSocialMedia/>
         
