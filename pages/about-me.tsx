@@ -15,19 +15,23 @@ const AboutMe = () => {
 
       <Grid item>
           <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>{actualPhrase}</Typography>
-          <Typography variant='body1' mt={5}>Consequat  proident nisi. Adipisicing excepteur amet eu aliqua adipisicing veniam ea Lorem ullamco officia quis dolore velit reprehenderit. Reprehenderit Lorem excepteur Lorem id veniam labore dolore amet anim.</Typography>
+          <Typography variant='body1' mt={5}>
+            Desarrollador full-stack en proceso ya usando tecnologias como lo son React, NextJs, NodeJs etc. Ademas tambien de virtualizacion mediante docker
+          </Typography>
         </Grid>
 
         <Grid item mt={3} mr={5} mb={3}>
-          <Typography variant='body1'>Officia voluptate duis sunt consequat tempor Lorem consectetur mollit mollit Lorem nostrud veniam. Eiusmod exercitation labore ex aliqua do. Ut do fugiat Lorem pariatur anim do nisi pariatur irure cillum. Exercitation incididunt culpa anim qui eu cupidatat ullamco duis. Labore dolor sint est exercitation Lorem cupidatat nostrud deserunt esse nisi minim cupidatat. Tempor dolor consectetur tempor adipisicing velit anim labore.</Typography>
+          <Typography variant='body1'>
+            Actualmente tambien soy estudiante universitario de la carrera de Ingenieria en Sistemas Computaciones, donde he estado aprediendo sobre
+            buenas practicas y plenacion de proyectos a nivel profecional
+          </Typography>
         </Grid>
 
         <hr style={{ width: '95%'}}/>
 
-        <Grid item >
-          <Typography variant='body1' mt={2}>Officia dolor culpa enim dolore sint dolor occaecat. Ipsum sit laborum anim esse consequat. Non et nulla reprehenderit veniam sunt deserunt reprehenderit.</Typography>
-          <Typography variant='body1' mt={2}>Officia dolor culpa enim dolore sint dolor occaecat. Ipsum sit laborum anim esse consequat. Non et nulla reprehenderit veniam sunt deserunt reprehenderit.</Typography>
-          <Typography variant='body1' mt={2}>Officia dolor culpa enim dolore sint dolor occaecat. Ipsum sit laborum anim esse consequat. Non et nulla reprehenderit veniam sunt deserunt reprehenderit.</Typography>
+        <Grid item  m='10px 0'>
+          <Typography variant='h2' component='h2'>Herramientas Web</Typography>
+          
         </Grid>
 
         <hr style={{ width: '95%'}}/>

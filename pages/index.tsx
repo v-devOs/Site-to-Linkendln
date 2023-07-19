@@ -1,5 +1,5 @@
+import NextLink from 'next/link'
 import Image from 'next/image'
-
 import { Avatar, Grid, IconButton, Typography, Link } from '@mui/material'
 
 import InstagramIcon from '@mui/icons-material/Instagram'
@@ -9,7 +9,6 @@ import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 
 import { InitialPageLayout } from '@/layouts'
 import { useWrite } from '@/hooks'
-import { useEffect } from 'react'
 
 
 const HomePage = () => {
@@ -25,7 +24,7 @@ const HomePage = () => {
 
         <Grid item>
           <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>{actualPhrase}</Typography>
-          <Typography variant='body1' mt={5}>Consequat aliquip labore sint irure voluptate. Nisi culpa Lorem veniam id cillum id aliquip anim dolore proident nisi. Adipisicing excepteur amet eu aliqua adipisicing veniam ea Lorem ullamco officia quis dolore velit reprehenderit. Reprehenderit Lorem excepteur Lorem id veniam labore dolore amet anim.</Typography>
+          <Typography variant='h2' mt={5}>Desarollador y diseñador web </Typography>
         </Grid>
 
           <Grid item mt={3} mr={5} mb={3}>
@@ -34,34 +33,43 @@ const HomePage = () => {
 
           <Grid item display='flex' flexDirection='column' mt={3}>
             <IconButton>
-              <Link href='' component='span'>
-                <InstagramIcon/>
-              </Link>
+              <NextLink passHref href='https://instagram.com/uriel_egl?igshid=MzNlNGNkZWQ4Mg=='>
+                <Link component='span'>
+                  <InstagramIcon/>
+                </Link>
+              </NextLink>
             </IconButton>
 
             <IconButton>
-            <Link href='' component='span'>
-                <LinkedInIcon/>
-              </Link>
+              <NextLink passHref href='https://wa.me/qr/QCHPQLGFDJH3D1'>
+                <Link component='span'>
+                  <WhatsAppIcon/>
+                </Link>
+              </NextLink>
             </IconButton>
 
             <IconButton>
-            <Link href='' component='span'>
-                <WhatsAppIcon/>
-              </Link>
+              <NextLink passHref href='https://www.linkedin.com/in/uriel-emiliano-galindo-l%C3%B3pez-27437a274'>
+                <Link component='span'>
+                  <LinkedInIcon/>
+                </Link>
+              </NextLink>
             </IconButton>
           </Grid>
 
           <Grid item>
             <Typography variant='body1'>
-              Ullamco ut incididunt eu aute non veniam qui reprehenderit esse minim voluptate. Aliqua aute quis eu voluptate ipsum. t do nisi ex do do excepteur cupidatat. Aliquip dolor velit commodo sit qui sunt magna reprehenderit excepteur eiusmod aute. Commodo nulla nisi quis nulla reprehenderit ea duis incididunt deserunt.
+              Hola!, soy Uriel Emiliano Galindo lópez, un joven programador y desarrolador web apasionado con el desarrollo de apliaciones web 
+              personalizables y accesibles a las personas, paginas informativas, apliaciones web e-comerce
             </Typography>
           </Grid>
 
           <Grid item>
-            <Link href='' component='span'>
-              <ArrowOutwardOutlinedIcon/> Contactarme
+            <NextLink href='/contact-me' passHref>
+            <Link component='span'>
+              <ArrowOutwardOutlinedIcon/> Contactame
             </Link>
+            </NextLink>
           </Grid>
       </Grid>
     </InitialPageLayout>

@@ -24,11 +24,11 @@ export const SideMenu = () => {
         ml={2}
         >v-Devos</Typography>
 
-      <List sx={{ display: { xs: 'flex', md: 'block'}}}>
+      <List sx={{ display: { xs: 'flex', md: 'block' }}}>
 
         {
           headerNavbar.map( header => (
-            <ListItemButton key={header.sectionName} sx={{ mt: 2 }} className={router.route === header.linkPage ? 'actual-section' : ''}>
+            <ListItemButton  key={header.sectionName} sx={{ mt: 2, borderRadius: '5px' }} className={router.route === header.linkPage ? 'actual-section' : ''}>
                 <NextLink href={header.linkPage} passHref>
                   <Link component='span'>
                     <Typography key={header.linkPage}>{header.sectionName}</Typography>
