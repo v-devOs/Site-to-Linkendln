@@ -1,11 +1,19 @@
+import { useContext } from 'react';
+
 import NextLink from 'next/link'
+
 import { AppBar, Box, IconButton, Link, Toolbar, Typography } from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
+
+import { UIContext } from '@/context/ui';
+
 import { navbarHeaders } from '@/data';
 
 
 export const Navbar = () => {
+
+  const { toggleSideMenu} = useContext(UIContext)
+
   return (
     <AppBar sx={{ background: '#101010', position: 'fixed'}}>
       <Toolbar>
@@ -31,7 +39,9 @@ export const Navbar = () => {
           }
         </Box>
       
-      <IconButton sx={{ display: {xs: 'flex', md: 'none'}}}>
+      <IconButton 
+        onClick={ toggleSideMenu }
+        sx={{ display: {xs: 'flex', md: 'none'}}}>
         <MenuOutlinedIcon/>
       </IconButton>
 

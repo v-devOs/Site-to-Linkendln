@@ -1,42 +1,36 @@
+import { useContext } from 'react';
 import NextLink from 'next/link'
-import { Button, Divider, Link, List, ListItem, ListItemButton, Toolbar, Typography } from '@mui/material';
-
-
-import { navbarHeaders } from '../../data/nav-headers';
-import { useRouter } from 'next/router';
-
-
+import { Divider, Drawer, Link, List, ListItem } from '@mui/material';
+import { navbarHeaders } from '@/data';
+import { UIContext } from '@/context/ui';
 
 
 export const SideMenu = () => {
 
-  const router = useRouter()
+  const { isActiveSideMenu, toggleSideMenu} = useContext(UIContext)
 
   return (
-    <div className='container-side-menu'>
-      <Toolbar/>
+    <Drawer
+      anchor='top'
+      open={isActiveSideMenu}
+      onClose={ toggleSideMenu }
+    >
 
-      <Typography 
-        variant='h5' 
-        component='h5' 
-        fontFamily='serif'
-        ml={2}
-        >v-Devos</Typography>
-
-      <List sx={{ display: { xs: 'flex', md: 'block' }}}>
-
+      <List sx={{ background: '#101010'}}>
         {
           navbarHeaders.map( header => (
-            <ListItemButton key={header.sectionName} sx={{ mt: 2, borderRadius: '5px' }} className={router.route === header.linkPage ? 'actual-section' : ''}>
-                <NextLink href={header.linkPage} passHref>
-                  <Link component='span'>
-                    <Typography key={header.linkPage}>{header.sectionName}</Typography>
-                  </Link>
-                </NextLink>
-            </ListItemButton>
+            <ListItem  key={header.linkPage}>
+              <NextLink passHref href={header.linkPage}>
+                <Link component='span'>
+                  {header.sectionName}
+                </Link>
+              </NextLink>
+              <Divider/>
+            </ListItem>
+
           ))
         }
       </List>
-    </div>
+    </Drawer>
   )
 }

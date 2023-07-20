@@ -31,7 +31,6 @@ export const InitialPageLayout: FC<Props> = ({ children, title, description }) =
       <main style={{ height: '100vh'}} className='fadeIn'>
           <Grid container>
             { children }
-
         </Grid>
         
       </main>

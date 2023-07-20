@@ -3,7 +3,7 @@ import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
 import { useWrite } from '../hooks/useWrite';
-import { Footer } from "@/components/ui";
+import { Footer, SideMenu } from "@/components/ui";
 
 const HomePage = () => {
 
@@ -11,6 +11,7 @@ const HomePage = () => {
 
   return (
     <InitialPageLayout title="Uriel Galindo" description="Mi sitio web creado para divulgar un poco de mis habilidades y proyectos realizados">
+      <SideMenu/>
       <Grid 
         container 
         className="container-header"
