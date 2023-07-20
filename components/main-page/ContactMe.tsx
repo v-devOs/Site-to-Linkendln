@@ -3,7 +3,7 @@ import { Grid, TextField, Typography } from '@mui/material'
 
 export const ContactMe = () => {
   return (
-    <Grid container >
+    <Grid container mb={10}>
       <Grid item sm={12}>
       </Grid>
       

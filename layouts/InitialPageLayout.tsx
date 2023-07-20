@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react'
 import Head from 'next/head'
 import { Grid, SxProps, Theme } from '@mui/material'
-import { SideMenu } from '@/components/ui'
+import {  SideMenu } from '@/components/ui'
 
 interface Props{
   children: ReactNode
@@ -27,12 +27,13 @@ export const InitialPageLayout: FC<Props> = ({ children, title, description }) =
       
 
       <main style={{ height: '100vh'}} className='fadeIn'>
-
           <Grid container>
             { children }
 
         </Grid>
+        
       </main>
+
     </>
   )
 }

@@ -3,6 +3,7 @@ import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
 import { useWrite } from '../hooks/useWrite';
+import { Footer } from "@/components/ui";
 
 const HomePage = () => {
 
@@ -22,7 +23,7 @@ const HomePage = () => {
 
       <Grid
         container
-        sx={{ m: { xs: '50vh 10px', md: '60vh 30px'}, background: '#101010', width: '100%', borderRadius: '20px', p: '20px'}}
+        sx={{ m: { xs: '50vh 10px 20px', md: '60vh 30px 20px'}, background: '#101010', width: '100%', borderRadius: '20px', p: '20px'}}
       >
 
         <AboutMe/>
@@ -38,7 +39,13 @@ const HomePage = () => {
 
         <ContactMe/>
 
+        <hr style={{ width: '100%'}}/>
+
+        <footer style={{ width: '100%'}}>
+          <Footer/>
+        </footer>
       </Grid>
+
 
 
     </InitialPageLayout>

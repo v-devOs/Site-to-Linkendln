@@ -136,4 +136,9 @@ a{
   .cardAnimation{
     animation: boobleSide 2s infinite;
   }
+
+  .image-contact-me{
+    display: none;
+  }
+
 }
