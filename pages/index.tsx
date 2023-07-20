@@ -1,4 +1,4 @@
-import { AboutMe, ContactMe, Projects, Skills } from "@/components/main-page"
+import { AboutMe, Projects, Skills } from "@/components/main-page"
 import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
@@ -7,7 +7,7 @@ import { Footer, SideMenu } from "@/components/ui";
 
 const HomePage = () => {
 
-  const {actualPhrase} = useWrite('Hola!, Soy Uriel Galindo')
+  const { actualPhrase } = useWrite('Hola!, Soy Uriel Galindo')
 
   return (
     <InitialPageLayout title="Uriel Galindo" description="Mi sitio web creado para divulgar un poco de mis habilidades y proyectos realizados">
@@ -37,17 +37,7 @@ const HomePage = () => {
         <hr style={{ width: '100%'}}/>
 
         <Projects/>
-
-        <ContactMe/>
-
-        <hr style={{ width: '100%'}}/>
-
-        <footer style={{ width: '100%'}}>
-          <Footer/>
-        </footer>
       </Grid>
-
-
 
     </InitialPageLayout>
   )
