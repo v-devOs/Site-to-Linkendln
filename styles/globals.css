@@ -2,6 +2,22 @@ a{
   text-decoration: none;
 }
 
+.container-header{
+  background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url("/images/background.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  position: absolute;
+  z-index: -1;
+}
+
+.ejemplo{
+  margin: 60vh 30px;
+  background: #101010;
+  width: 100%;
+}
 .actual-section{
   background-color: #252525;
 }

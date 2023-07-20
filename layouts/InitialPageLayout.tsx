@@ -10,7 +10,7 @@ interface Props{
 }
 
 const stylesMainContainer: SxProps<Theme> = {
-  p: {sm: '90px auto', md: '80px 15%'}
+  // p: {sm: '90px auto', md: '80px 15%'}
 } 
 
 export const InitialPageLayout: FC<Props> = ({ children, title, description }) => {
@@ -27,15 +27,9 @@ export const InitialPageLayout: FC<Props> = ({ children, title, description }) =
       
 
       <main style={{ height: '100vh'}} className='fadeIn'>
-        <Grid container sx={stylesMainContainer}>
 
-          <Grid item xs={12} md={3}>
-            <SideMenu/>
-          </Grid>
-
-          <Grid item xs={12} md={9} sx={{ p: '0 30px'}}>
+          <Grid container>
             { children }
-          </Grid>
 
         </Grid>
       </main>

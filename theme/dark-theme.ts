@@ -29,13 +29,18 @@ export const darkTheme = createTheme({
     MuiTypography:{
       styleOverrides: {
         h1: {
-          fontSize: 45,
+          fontSize: 55,
           fontWeight: 500
         },
         h2: {
+          fontSize: 40,
+          fontWeight: 300
+        },
+        h3: {
           fontSize: 30,
           fontWeight: 300
         },
+
       }
     },
     MuiButton: {
