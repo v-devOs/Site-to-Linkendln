@@ -4,6 +4,7 @@ import { Grid, Typography, Button, Link } from '@mui/material'
 import { InitialPageLayout } from '@/layouts'
 import { LinksSocialMedia } from '@/components/ui'
 import { Skills } from '@/components/aboutMe'
+import { skillsBackEnd, skillsFrontEnd } from '@/data'
 
 
 const AboutMe = () => {
@@ -16,13 +17,13 @@ const AboutMe = () => {
 
       <Grid item>
           <Typography variant='h1' component='h1' sx={{ fontFamily: 'serif'}}>{actualPhrase}</Typography>
-          <Typography variant='body1' mt={5}>
+          <Typography variant='h6' mt={5}>
             Desarrollador full-stack en proceso ya usando tecnologias como lo son React, NextJs, NodeJs etc. Ademas tambien de virtualizacion mediante docker
           </Typography>
         </Grid>
 
         <Grid item mt={3} mr={5} mb={3}>
-          <Typography variant='body1'>
+          <Typography variant='h6'>
             Actualmente tambien soy estudiante universitario de la carrera de Ingenieria en Sistemas Computaciones, donde he estado aprediendo sobre
             buenas practicas y plenacion de proyectos a nivel profecional
           </Typography>
@@ -31,8 +32,10 @@ const AboutMe = () => {
         <hr style={{ width: '95%'}}/>
 
         <Grid item  m='10px 0'>
-          <Typography variant='h2' component='h2'>Herramientas Web</Typography>
-          <Skills/>
+          <Typography variant='h2' component='h2'>Herramientas Front-end</Typography>
+          <Skills skills={skillsFrontEnd}/>
+          <Typography variant='h2' component='h2'>Herramientas Back-end</Typography>
+          <Skills skills={skillsBackEnd}/>
         </Grid>
 
         <hr style={{ width: '95%'}}/>

@@ -4,12 +4,8 @@ export const headerNavbar: ILink[] = [
     linkPage: '/'
   },
   {
-    sectionName: 'Sobre mi',
+  sectionName: 'Sobre mi',
     linkPage: '/about-me'
-  },
-  {
-    sectionName: 'Proyectos',
-    linkPage: '/projects'
   },
   {
     sectionName: 'Contacto',

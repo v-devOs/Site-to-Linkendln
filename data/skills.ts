@@ -1,6 +1,14 @@
 
 
-export const skills: ISkill[] = [
+export const skillsFrontEnd: ISkill[] = [
+  {
+    name: 'Css',
+    image: '/icons/css.svg'
+  },
+  {
+    name: 'Material UI',
+    image: '/icons/materialui.svg'
+  },
   {
     name: 'TypeScript',
     image: '/icons/typescript.svg' 
@@ -13,6 +21,13 @@ export const skills: ISkill[] = [
     name: 'NextJs',
     image: '/icons/nextjs.svg' 
   },
+]
+
+export const skillsBackEnd: ISkill[] = [
+  {
+    name: 'NodeJs' ,
+    image: '/icons/nodejs.svg'
+  },
   {
     name: 'MongoDB' ,
     image: '/icons/mongodb.svg'
@@ -22,13 +37,21 @@ export const skills: ISkill[] = [
     image: '/icons/firebase.svg'
   },
   {
+    name: 'MySql',
+    image: '/icons/mysql.svg'
+  },
+  {
     name: 'Git',
     image: '/icons/git.svg' 
+  },
+  {
+    name: 'Docker',
+    image: '/icons/docker.svg' 
   },
 ]
 
 
-interface ISkill{
+export interface ISkill{
   name: string
   image: string
 }

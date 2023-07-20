@@ -1,14 +1,19 @@
-import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
-import { skills } from '../../data/skills';
+import { FC } from 'react';
 import Image from 'next/image';
+import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { ISkill } from '@/data';
 
-export const Skills = () => {
+interface Props{
+  skills: ISkill[]
+}
+
+export const Skills: FC<Props> = ({ skills }) => {
   return (
-    <Grid container spacing={2} display='flex' justifyContent='space-between'>
+    <Grid container spacing={5} mt={2} mb={5}>
       
       {
         skills.map( (skill, idx) => (
-          <Grid item mt={2} sx={{ textAlign: 'center', mt:5}} key={idx}>
+          <Grid item mt={2} sx={{ textAlign: 'center', mt:2}} key={idx}>
             <Image
               src={skill.image}
               alt={skill.name}

@@ -27,35 +27,41 @@ const HomePage = () => {
           <Typography variant='h2' mt={5}>Desarollador y diseñador web </Typography>
         </Grid>
 
-          <Grid item mt={3} mr={5} mb={3}>
-            <Avatar alt='Uriel Galindo' src='/images/me.jpg' sx={{ width: 130, height: 130}}/>
+
+          <Grid container display='flex' flexDirection='row'>
+
+            <Grid item mt={3} mr={5} mb={3}>
+              <Avatar alt='Uriel Galindo' src='/images/me.jpg' sx={{ width: 130, height: 130}}/>
+            </Grid>
+
+
+            <Grid item display='flex' flexDirection='column' mt={3} >
+              <IconButton>
+                <NextLink passHref href='https://instagram.com/uriel_egl?igshid=MzNlNGNkZWQ4Mg=='>
+                  <Link component='span'>
+                    <InstagramIcon/>
+                  </Link>
+                </NextLink>
+              </IconButton>
+
+              <IconButton>
+                <NextLink passHref href='https://wa.me/qr/QCHPQLGFDJH3D1'>
+                  <Link component='span'>
+                    <WhatsAppIcon/>
+                  </Link>
+                </NextLink>
+              </IconButton>
+
+              <IconButton>
+                <NextLink passHref href='https://www.linkedin.com/in/uriel-emiliano-galindo-l%C3%B3pez-27437a274'>
+                  <Link component='span'>
+                    <LinkedInIcon/>
+                  </Link>
+                </NextLink>
+              </IconButton>
+            </Grid>
           </Grid>
-
-          <Grid item display='flex' flexDirection='column' mt={3}>
-            <IconButton>
-              <NextLink passHref href='https://instagram.com/uriel_egl?igshid=MzNlNGNkZWQ4Mg=='>
-                <Link component='span'>
-                  <InstagramIcon/>
-                </Link>
-              </NextLink>
-            </IconButton>
-
-            <IconButton>
-              <NextLink passHref href='https://wa.me/qr/QCHPQLGFDJH3D1'>
-                <Link component='span'>
-                  <WhatsAppIcon/>
-                </Link>
-              </NextLink>
-            </IconButton>
-
-            <IconButton>
-              <NextLink passHref href='https://www.linkedin.com/in/uriel-emiliano-galindo-l%C3%B3pez-27437a274'>
-                <Link component='span'>
-                  <LinkedInIcon/>
-                </Link>
-              </NextLink>
-            </IconButton>
-          </Grid>
+       
 
           <Grid item>
             <Typography variant='body1'>
