@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { ISkill } from '@/data';
 import { SkillsDetails } from './SkillsDetails';
 
@@ -11,6 +11,21 @@ interface Props{
 }
 
 export const Skills: FC<Props> = ({ skills, title, useInSideLef }) => {
+
+  const [ scrollInY, setScrollInY ] = useState<number>(0);
+
+  useEffect(() => {
+    
+    window.addEventListener('scroll', () => (
+      setScrollInY( window.scrollY )
+    ))
+
+
+    return () => {
+      window.removeEventListener('scroll', () => (setScrollInY(window.scrollY)))
+    }
+  }, [])
+
   return (
 
     <Grid container mt={2} mb={2}>
@@ -21,10 +36,10 @@ export const Skills: FC<Props> = ({ skills, title, useInSideLef }) => {
         useInSideLef && <SkillsDetails title={title}/>
       }
 
-      <Grid item sm={12} md={6} mt={2} p={5} sx={{ display: 'flex', gap: 5, flexWrap: 'wrap', justifyContent: { xs: 'center', md:'space-between'}}}>
+      <Grid item sm={12} md={6} mt={2} p={5} sx={{ display: 'flex', gap: 5, flexWrap: 'wrap', justifyContent: { xs: 'center', md:'space-evenly'}}}>
           {
             skills.map( (skill, idx) => (
-              <div  key={idx} >
+              <div key={idx} className={`${ scrollInY > 300 ? 'cardApear': ''}`} >
                 <Image
                   src={skill.image}
                   alt={skill.name}

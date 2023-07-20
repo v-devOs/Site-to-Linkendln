@@ -1,4 +1,4 @@
-import { AboutMe, Skills } from "@/components/main-page"
+import { AboutMe, Projects, Skills } from "@/components/main-page"
 import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { useWrite } from "@/hooks"
 import { InitialPageLayout } from "@/layouts"
@@ -35,6 +35,8 @@ const index2 = () => {
 
         <hr style={{ width: '100%'}}/>
 
+        <Typography variant="h2" component='h2'></Typography>
+        <Projects/>
 
       </Grid>
 
