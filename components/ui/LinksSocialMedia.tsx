@@ -27,8 +27,7 @@ const socialMediaLinks = [
 
 export const LinksSocialMedia = () => {
   return (
-    <Grid item xs={12} mt={4} 
-      sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}
+    <Grid item mt={4}
     >
       {
         socialMediaLinks.map( ({ sectionName, linkPage, icon})=> (

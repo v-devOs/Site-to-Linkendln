@@ -97,6 +97,7 @@ a{
   border: 1px solid white;
   width: 150px;
   margin: 10px 0;
+  margin-right: 30px;
 }
 
 .circular-btn:hover {
@@ -104,6 +105,9 @@ a{
 }
 
 @media screen and (max-width: 546px) {
+  .container-header{
+    padding-top: 30%;
+  }
   .container-side-menu{
     position: relative;
   }
@@ -128,6 +132,7 @@ a{
   .image-contact-me{
     display: none;
   }
+
 
 }
 

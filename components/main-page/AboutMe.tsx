@@ -6,6 +6,7 @@ import { Avatar, Grid, IconButton, Typography, Link } from '@mui/material'
 
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import Image from 'next/image';
+import { LinksSocialMedia } from '../ui';
 
 export const AboutMe = () => {
 
@@ -27,8 +28,10 @@ export const AboutMe = () => {
             Actualmente tambien soy estudiante universitario de la carrera de Ingenieria en Sistemas Computaciones, donde he estado aprediendo sobre
             buenas practicas y plenacion de proyectos a nivel profecional
           </Typography>
+          <LinksSocialMedia/>
         </Grid>
-        <Grid item sm={12} lg={3} mt={2}>
+
+        <Grid item sm={12} lg={3} mt={2} sx={{ display: {xs: 'none', md: 'block'}}}>
           <Image
             src='/images/vector-p-1.jpg'
             width={300}
@@ -39,6 +42,8 @@ export const AboutMe = () => {
           />
         </Grid>
       </Grid>
+
+      
 
       <hr style={{ width: '100%'}}/>
 
