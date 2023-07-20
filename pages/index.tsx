@@ -1,5 +1,5 @@
 import { AboutMe, Skills } from "@/components/main-page"
-import { skillsFrontEnd } from "@/data"
+import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { useWrite } from "@/hooks"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
@@ -30,6 +30,11 @@ const index2 = () => {
 
         <Typography variant="h2" component='h2' mt={2}>Tecnologias para desarrollo</Typography>
         <Skills skills={skillsFrontEnd} title="Front-End"/>
+        
+        <Skills skills={skillsBackEnd} title="Back-End" useInSideLef={true}/>
+
+        <hr style={{ width: '100%'}}/>
+
 
       </Grid>
 
