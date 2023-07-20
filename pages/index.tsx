@@ -1,12 +1,12 @@
 import { AboutMe, Projects, Skills } from "@/components/main-page"
 import { skillsBackEnd, skillsFrontEnd } from "@/data"
-import { useWrite } from "@/hooks"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
+import { useWrite } from '../hooks/useWrite';
 
-const index2 = () => {
+const HomePage = () => {
 
-  const { actualPhrase } = useWrite('Hola! Soy Uriel Galindo')
+  const {actualPhrase} = useWrite('Hola!, Soy Uriel Galindo')
 
   return (
     <InitialPageLayout title="Uriel Galindo" description="Mi sitio web creado para divulgar un poco de mis habilidades y proyectos realizados">
@@ -15,15 +15,14 @@ const index2 = () => {
         className="container-header"
       >
         <header>
-          <Typography variant="h1" component='h1'>{ actualPhrase }</Typography>
-          <Typography variant="body2">'Si puedes imaginarlo puedes programarlo' - Alejandro Taboada</Typography>
+          <Typography variant="h1" component='h1'>{actualPhrase}</Typography>
+          <Typography variant="body1">'Si puedes imaginarlo puedes programarlo' - Alejandro Taboada</Typography>
         </header>
       </Grid>
 
       <Grid
         container
-        className="ejemplo"
-        sx={{ m: { xs: '60vh 10px', md: '60vh 30px'}, background: '#101010', width: '100%', borderRadius: '20px', p: '20px'}}
+        sx={{ m: { xs: '50vh 10px', md: '60vh 30px'}, background: '#101010', width: '100%', borderRadius: '20px', p: '20px'}}
       >
 
         <AboutMe/>
@@ -35,7 +34,6 @@ const index2 = () => {
 
         <hr style={{ width: '100%'}}/>
 
-        <Typography variant="h2" component='h2'></Typography>
         <Projects/>
 
       </Grid>
@@ -45,4 +43,4 @@ const index2 = () => {
   )
 }
 
-export default index2
+export default HomePage

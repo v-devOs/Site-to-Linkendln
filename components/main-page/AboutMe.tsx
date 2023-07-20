@@ -28,7 +28,7 @@ export const AboutMe = () => {
             buenas practicas y plenacion de proyectos a nivel profecional
           </Typography>
         </Grid>
-        <Grid item sm={12} md={3} mt={2}>
+        <Grid item sm={12} lg={3} mt={2}>
           <Image
             src='/images/vector-p-1.jpg'
             width={300}

@@ -8,9 +8,16 @@ a{
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 10%;
+  padding: 10% 10%;
   position: absolute;
   z-index: -1;
+}
+
+.container-projects{
+  background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url("/images/projectsBack.png");
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px 10px;
 }
 
 .actual-section{
@@ -37,8 +44,15 @@ a{
   80% { transform: translateY(40px); opacity: 0;};
 }
 
+@keyframes bobbleSide {
+  10% { transform: translateX(-40px); };
+  50% { transform: translateX(40px) translateX(-20px)};
+  80% { transform: translateX(40px); opacity: 0;};
+}
+
 .cardApear{
   animation: rotate .5s linear;
+  text-align: center;
 }
 
 @keyframes rotate{
@@ -94,4 +108,15 @@ a{
     height: 150px;
   }
 
+  .cardAnimation{
+    animation: boobleSide 2s infinite;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  
+  .cardAnimation{
+    animation: boobleSide 2s infinite;
+  }
 }
