@@ -1,4 +1,5 @@
-import { AboutMe } from "@/components/main-page/AboutMe"
+import { AboutMe, Skills } from "@/components/main-page"
+import { skillsFrontEnd } from "@/data"
 import { useWrite } from "@/hooks"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
@@ -22,10 +23,14 @@ const index2 = () => {
       <Grid
         container
         className="ejemplo"
-        sx={{ m: { sm: '60vh 10px', md: '60vh 30px'}, background: '#101010', width: '100%', borderRadius: '20px', p: { sm: '20px', md: '30px'} }}
+        sx={{ m: { xs: '60vh 10px', md: '60vh 30px'}, background: '#101010', width: '100%', borderRadius: '20px', p: '20px'}}
       >
 
         <AboutMe/>
+
+        <Typography variant="h2" component='h2' mt={2}>Tecnologias para desarrollo</Typography>
+        <Skills skills={skillsFrontEnd} title="Front-End"/>
+
       </Grid>
 
 

@@ -13,11 +13,6 @@ a{
   z-index: -1;
 }
 
-.ejemplo{
-  margin: 60vh 30px;
-  background: #101010;
-  width: 100%;
-}
 .actual-section{
   background-color: #252525;
 }
@@ -25,6 +20,21 @@ a{
 .container-side-menu{
   margin: 0 10px;
   position: fixed;
+}
+
+.cardAnimation{
+  animation: bobble 10s infinite;
+}
+
+.vectorImage{
+  width: 300px;
+  height: 250px;
+}
+
+@keyframes bobble {
+  0% { transform: translateY(20px)};
+  50% { transform: translateY(60px)};
+  100% { transform: translateY(20px)};
 }
 
 
@@ -68,6 +78,11 @@ a{
 
   .circular-btn{
     width: 100%;
+  }
+
+  .vectorImage{
+    width: 200px;
+    height: 150px;
   }
 
 }
