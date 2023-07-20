@@ -4,7 +4,7 @@ import { projects } from '@/data'
 
 export const Projects = () => {
   return (
-    <Grid container mt={2}  className='container-projects'>
+    <Grid container mt={2}   className='container-projects'>
 
       <Grid item xs={12} >
         <Typography variant="h2" component='h2'>Proyectos realizados</Typography>

@@ -8,6 +8,7 @@ a{
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding: 10% 10%;
   position: absolute;
   z-index: -1;
@@ -72,6 +73,14 @@ a{
   100% {opacity: 1;}
 }
 
+.inputForm{
+  margin: 5px;
+}
+
+.image-contact-me{
+  border-radius: 10px;
+}
+
 .fadeIn {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -108,8 +117,16 @@ a{
     height: 150px;
   }
 
+  .container-projects{
+    padding: 5px;
+  }
+
   .cardAnimation{
     animation: boobleSide 2s infinite;
+  }
+
+  .image-contact-me{
+    display: none;
   }
 
 }

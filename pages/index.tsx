@@ -1,4 +1,4 @@
-import { AboutMe, Projects, Skills } from "@/components/main-page"
+import { AboutMe, ContactMe, Projects, Skills } from "@/components/main-page"
 import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
@@ -35,6 +35,8 @@ const HomePage = () => {
         <hr style={{ width: '100%'}}/>
 
         <Projects/>
+
+        <ContactMe/>
 
       </Grid>
 
