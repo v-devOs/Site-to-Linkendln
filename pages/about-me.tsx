@@ -3,6 +3,7 @@ import { Grid, Typography, Button, Link } from '@mui/material'
 
 import { InitialPageLayout } from '@/layouts'
 import { LinksSocialMedia } from '@/components/ui'
+import { Skills } from '@/components/aboutMe'
 
 
 const AboutMe = () => {
@@ -31,12 +32,11 @@ const AboutMe = () => {
 
         <Grid item  m='10px 0'>
           <Typography variant='h2' component='h2'>Herramientas Web</Typography>
-          
+          <Skills/>
         </Grid>
 
         <hr style={{ width: '95%'}}/>
 
-        {/* TODO: Realizar compoenete que muestre las habilidades mas destacadas */}
 
         
         <LinksSocialMedia/>

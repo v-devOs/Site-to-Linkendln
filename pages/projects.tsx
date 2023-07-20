@@ -18,6 +18,7 @@ const Projects = () => {
         <Grid item mt={3} mr={5} mb={3}>
           <Avatar alt='Uriel Galindo' src='/images/me.jpg' sx={{ width: 130, height: 130}}/>
         </Grid>
+
         
       </Grid>
     </InitialPageLayout>
