@@ -16,7 +16,7 @@ const HomePage = () => {
       >
         <header>
           <Typography variant="h1" component='h1'>{actualPhrase}</Typography>
-          <Typography variant="body1">'Si puedes imaginarlo puedes programarlo' - Alejandro Taboada</Typography>
+          <Typography variant="body1">Si puedes imaginarlo puedes programarlo - Alejandro Taboada</Typography>
         </header>
       </Grid>
 
