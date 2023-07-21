@@ -2,6 +2,7 @@ import { UIState } from './';
 
 type UIActionType = 
 | { type: '[UI] - Toogle SideMenu' } 
+| { type: '[UI] - Toogle Modal' } 
 
 export const uiReducer = ( state: UIState, action: UIActionType ): UIState => {
   
@@ -10,6 +11,12 @@ export const uiReducer = ( state: UIState, action: UIActionType ): UIState => {
       return{
         ...state,
         isActiveSideMenu: !state.isActiveSideMenu
+      }
+
+    case '[UI] - Toogle Modal':
+      return{
+        ...state,
+        isActiveModal: !state.isActiveModal
       }
 
     default:

@@ -7,13 +7,13 @@ import { UIContext } from '@/context/ui';
 
 export const SideMenu = () => {
 
-  const { isActiveSideMenu, toggleSideMenu} = useContext(UIContext)
+  const { isActiveSideMenu, toggleSideMenuOrModal} = useContext(UIContext)
 
   return (
     <Drawer
       anchor='top'
       open={isActiveSideMenu}
-      onClose={ toggleSideMenu }
+      onClose={ () => toggleSideMenuOrModal(true) }
     >
 
       <List sx={{ background: '#101010'}}>

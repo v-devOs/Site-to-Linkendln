@@ -1,15 +1,15 @@
 export const navbarHeaders: ILink[] = [
   {
+    sectionName: 'Proyectos',
+    linkPage: '#projects'
+  },
+  {
     sectionName: 'Herramientas',
     linkPage: '#tools'
   },
   {
-  sectionName: 'Sobre mi',
+    sectionName: 'Acerca de mi',
     linkPage: '#about-me'
-  },
-  {
-    sectionName: 'Contacto',
-    linkPage: '#contact-me'
   },
 ]
 

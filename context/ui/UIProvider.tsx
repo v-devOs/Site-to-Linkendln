@@ -7,25 +7,28 @@ interface Props {
 
 export interface UIState {
   isActiveSideMenu: boolean;
+  isActiveModal: boolean
 }
 
 const UI_INITIAL_STATE : UIState = {
   isActiveSideMenu: false,
+  isActiveModal: false
 }
 
 export const UIProvider: FC<Props> = ({ children }) => {
 
   const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE)
   
-  const toggleSideMenu = () => {
-    dispatch({ type: '[UI] - Toogle SideMenu'})
+  const toggleSideMenuOrModal = ( isToggleSideMenu: boolean) => {
+    isToggleSideMenu ? dispatch({ type: '[UI] - Toogle SideMenu'}) : dispatch({ type: '[UI] - Toogle Modal'})
   }
+
   return (
     <UIContext.Provider value={{
       ...state,
 
       // Methods
-      toggleSideMenu
+      toggleSideMenuOrModal
     }}>
     { children }
     </UIContext.Provider>

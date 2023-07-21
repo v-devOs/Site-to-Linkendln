@@ -12,7 +12,7 @@ import { navbarHeaders } from '@/data';
 
 export const Navbar = () => {
 
-  const { toggleSideMenu} = useContext(UIContext)
+  const { toggleSideMenuOrModal } = useContext(UIContext)
 
   return (
     <AppBar sx={{ background: '#101010', position: 'fixed'}}>
@@ -40,7 +40,7 @@ export const Navbar = () => {
         </Box>
       
       <IconButton 
-        onClick={ toggleSideMenu }
+        onClick={ () => toggleSideMenuOrModal( true ) }
         sx={{ display: {xs: 'flex', md: 'none'}}}>
         <MenuOutlinedIcon/>
       </IconButton>

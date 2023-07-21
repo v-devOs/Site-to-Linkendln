@@ -8,17 +8,17 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 
 const socialMediaLinks = [
   {
-    linkPage: '',
+    linkPage: 'https://github.com/v-deVos',
     sectionName: 'Github',
     icon: <GitHubIcon/>
   },
   {
-    linkPage: '',
+    linkPage: 'https://www.linkedin.com/in/uriel-emiliano-galindo-l%C3%B3pez-27437a274',
     sectionName: 'LinkedIn',
     icon: <LinkedInIcon/>
   },
   {
-    linkPage: '',
+    linkPage: 'https://wa.me/qr/QCHPQLGFDJH3D1 ',
     sectionName: 'WhatsApp',
     icon: <WhatsAppIcon/>
   },
