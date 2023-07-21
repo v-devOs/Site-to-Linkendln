@@ -7,6 +7,7 @@ import { Avatar, Grid, IconButton, Typography, Link } from '@mui/material'
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import Image from 'next/image';
 import { LinksSocialMedia } from '../ui';
+import { ButtonsContact } from './ButtonContact';
 
 export const AboutMe = () => {
 
@@ -28,6 +29,7 @@ export const AboutMe = () => {
             Actualmente tambien soy estudiante universitario de la carrera de Ingenieria en Sistemas Computaciones, donde he estado aprediendo sobre
             buenas practicas y plenacion de proyectos a nivel profecional
           </Typography>
+          <ButtonsContact/>
           <LinksSocialMedia/>
         </Grid>
 

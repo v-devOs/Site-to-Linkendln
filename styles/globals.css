@@ -13,6 +13,13 @@ a{
   z-index: -1;
 }
 
+.btn-contact-me{
+  /* border: 1px solid white; */
+  color: white;
+  background: rgb(36,8,97);
+background: linear-gradient(274deg, rgba(36,8,97,1) 23%, rgba(43,33,140,1) 72%);
+}
+
 .container-projects{
   background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url("/images/projectsBack.png");
   background-size: cover;
@@ -96,7 +103,6 @@ a{
   border: 1px solid white;
   width: 150px;
   margin: 10px 0;
-  margin-right: 30px;
 }
 
 .circular-btn:hover {

@@ -1,9 +1,9 @@
-import { AboutMe, Projects, Skills } from "@/components/main-page"
+import { AboutMe, ButtonsContact, Projects, Skills } from "@/components/main-page"
 import { skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
 import { useWrite } from '../hooks/useWrite';
-import { Footer, SideMenu } from "@/components/ui";
+import { SideMenu } from "@/components/ui";
 
 const HomePage = () => {
 
@@ -19,6 +19,7 @@ const HomePage = () => {
         <header>
           <Typography variant="h1" component='h1'>{actualPhrase}</Typography>
           <Typography variant="body1">Si puedes imaginarlo puedes programarlo - Alejandro Taboada</Typography>
+
         </header>
       </Grid>
 
