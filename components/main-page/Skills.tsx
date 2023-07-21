@@ -7,10 +7,11 @@ import { SkillsDetails } from './SkillsDetails';
 interface Props{
   skills: ISkill[]
   title: string
+  description: string
   useInSideLef?: boolean
 }
 
-export const Skills: FC<Props> = ({ skills, title, useInSideLef }) => {
+export const Skills: FC<Props> = ({ skills, title, useInSideLef, description }) => {
 
   const [ scrollInY, setScrollInY ] = useState<number>(0);
 
@@ -41,7 +42,7 @@ export const Skills: FC<Props> = ({ skills, title, useInSideLef }) => {
       <Typography variant='h3' component='h3' mb={2} sx={{ display:{xs: 'block', sm: 'none'}}}>{title}</Typography>
 
       {
-        useInSideLef && <SkillsDetails title={title}/>
+        useInSideLef && <SkillsDetails description={description} title={title}/>
       }
 
       <Grid item sm={12} md={6} mt={2} sx={styles}>
@@ -63,7 +64,7 @@ export const Skills: FC<Props> = ({ skills, title, useInSideLef }) => {
       </Grid>
       
       {
-        !useInSideLef && <SkillsDetails title={title}/>
+        !useInSideLef && <SkillsDetails description={description} title={title}/>
       }
     </Grid>
 

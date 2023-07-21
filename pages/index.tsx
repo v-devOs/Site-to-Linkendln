@@ -1,5 +1,5 @@
 import { AboutMe, ButtonsContact, Projects, Skills } from "@/components/main-page"
-import { skillsBackEnd, skillsFrontEnd } from "@/data"
+import { descBackEnd, descFrontEnd, skillsBackEnd, skillsFrontEnd } from "@/data"
 import { InitialPageLayout } from "@/layouts"
 import { Grid, Typography } from "@mui/material"
 import { useWrite } from '../hooks/useWrite';
@@ -31,9 +31,9 @@ const HomePage = () => {
         <AboutMe/>
 
         <Typography variant="h2" component='h2' mt={2}>Tecnologias para desarrollo</Typography>
-        <Skills skills={skillsFrontEnd} title="Front-End"/>
+        <Skills skills={skillsFrontEnd} title="Front-End" description={descFrontEnd}/>
         
-        <Skills skills={skillsBackEnd} title="Back-End" useInSideLef={true}/>
+        <Skills skills={skillsBackEnd} title="Back-End" useInSideLef={true} description={descBackEnd}/>
 
         <hr style={{ width: '100%'}}/>
 

@@ -10,7 +10,7 @@ export const ButtonsContact = () => {
       >
         <Grid item display='flex' flexDirection='column'>
           <Typography>¿Interesado en una aplicación?</Typography>
-          <Typography>Haz cliek y cuentame sobre tu idea</Typography>
+          <Typography>Haz click y cuentame sobre tu idea</Typography>
         </Grid>
       </Button>
     </Grid>
