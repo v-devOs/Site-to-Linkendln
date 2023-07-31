@@ -28,11 +28,11 @@ export const AboutMe = () => {
               Actualmente tambien soy estudiante universitario de la carrera de Ingenieria en Sistemas Computaciones, donde he estado aprediendo sobre
               buenas practicas y plenacion de proyectos a nivel profecional
             </Typography>
-            <ButtonsContact/>
+            {/* <ButtonsContact/> */}
             <LinksSocialMedia/>
           </Grid>
 
-          <Grid item sm={12} lg={3} mt={2} sx={{ display: {xs: 'none', md: 'block'}}}>
+          <Grid item sm={12} lg={3} mt={2} sx={{ display: {xs: 'none', lg: 'block'}}}>
             <Image
               src='/images/vector-p-1.jpg'
               width={300}

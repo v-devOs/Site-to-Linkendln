@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <InitialPageLayout title="Uriel Galindo" description="Mi sitio web creado para divulgar un poco de mis habilidades y proyectos realizados">
       <SideMenu/>
-      <Modal/>
+      {/* <Modal/> */}
       <Grid 
         container 
         className="container-header"
